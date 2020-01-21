@@ -3,14 +3,16 @@ import 'package:flutt/models/guancang.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-
+/*
+书籍详情页面中的馆藏信息子布局
+书籍详情页面中的评论信息子布局
+ */
 class LibraryItem extends StatelessWidget{
   Guancang _guancang;
 
   LibraryItem(Guancang guancang){
     _guancang = guancang;
   }
-
   @override
   Widget build(BuildContext context) {
     return Container(

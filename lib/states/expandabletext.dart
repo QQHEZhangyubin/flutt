@@ -1,6 +1,8 @@
 
 import 'package:flutter/material.dart';
-
+/*
+自定义的widget，用来实现：当文本字数过长时，出现“展开”按钮，展示全部文本，也可以“折叠”文本
+ */
 class ExpandableText extends StatefulWidget{
   final String text;
   final int maxLines;
@@ -11,7 +13,7 @@ class ExpandableText extends StatefulWidget{
 
   @override
   State<StatefulWidget> createState() {
-    return _ExpandableTextState(text, maxLines, style, expand);;
+    return _ExpandableTextState(text, maxLines, style, expand);
   }
 
 }
