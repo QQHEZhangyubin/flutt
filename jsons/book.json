@@ -1,0 +1,48 @@
+{
+  "booktype1": [
+    {
+      "bookid":1,
+      "bookname":"hsailcd",
+      "bookimgurl":"sdbkflgkkknhfukdgh",
+      "author":"dsbkflbgnjigoit",
+      "dec":"dafisfgndohwyu"
+    },
+    {
+      "bookid":2,
+      "bookname":"hsailcd",
+      "bookimgurl":"sdbkflgkkknhfukdgh",
+      "author":"dsbkflbgnjigoit",
+      "dec":"dafisfgndohwyu"
+    },
+    {
+      "bookid":3,
+      "bookname":"hsailcd",
+      "bookimgurl":"sdbkflgkkknhfukdgh",
+      "author":"dsbkflbgnjigoit",
+      "dec":"dafisfgndohwyu"
+    }
+  ],
+  "booktype2": [
+    {
+      "bookid":4,
+      "bookname":"hsailcd",
+      "bookimgurl":"sdbkflgkkknhfukdgh",
+      "author":"dsbkflbgnjigoit",
+      "dec":"dafisfgndohwyu"
+    },
+    {
+      "bookid":5,
+      "bookname":"hsailcd",
+      "bookimgurl":"sdbkflgkkknhfukdgh",
+      "author":"dsbkflbgnjigoit",
+      "dec":"dafisfgndohwyu"
+    },
+    {
+      "bookid":6,
+      "bookname":"hsailcd",
+      "bookimgurl":"sdbkflgkkknhfukdgh",
+      "author":"dsbkflbgnjigoit",
+      "dec":"dafisfgndohwyu"
+    }
+  ]
+}

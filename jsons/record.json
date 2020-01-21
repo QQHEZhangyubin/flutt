@@ -1,0 +1,120 @@
+{
+  "uid": 4,
+  "uimg": "sd",
+  "uname": "sdaf",
+  "availablemoney": 10,
+  "pastdueaccount":2,
+  "kejie": 13,
+  "nowread": [
+    {
+      "bookid":1,
+      "bookname":"hsailcd",
+      "bookimgurl":"sdbkflgkkknhfukdgh",
+      "author":"dsbkflbgnjigoit",
+      "endtime": "2020-10-20",
+      "library": "中区图书馆三楼",
+      "iscomment":"no"
+    },
+    {
+      "bookid":2,
+      "bookname":"hsailcd",
+      "bookimgurl":"sdbkflgkkknhfukdgh",
+      "author":"dsbkflbgnjigoit",
+      "endtime": "2020-10-20",
+      "library": "中区图书馆三楼",
+      "iscomment":"no"
+    },
+    {
+      "bookid":1,
+      "bookname":"hsailcd",
+      "bookimgurl":"sdbkflgkkknhfukdgh",
+      "author":"dsbkflbgnjigoit",
+      "endtime": "2020-10-20",
+      "library": "中区图书馆三楼",
+      "iscomment":"no"
+    },
+    {
+      "bookid":2,
+      "bookname":"hsailcd",
+      "bookimgurl":"sdbkflgkkknhfukdgh",
+      "author":"dsbkflbgnjigoit",
+      "endtime": "2020-10-20",
+      "library": "中区图书馆三楼",
+      "iscomment":"no"
+    },
+    {
+      "bookid":1,
+      "bookname":"hsailcd",
+      "bookimgurl":"sdbkflgkkknhfukdgh",
+      "author":"dsbkflbgnjigoit",
+      "endtime": "2020-10-20",
+      "library": "中区图书馆三楼",
+      "iscomment":"no"
+    },
+    {
+      "bookid":2,
+      "bookname":"hsailcd",
+      "bookimgurl":"sdbkflgkkknhfukdgh",
+      "author":"dsbkflbgnjigoit",
+      "endtime": "2020-10-20",
+      "library": "中区图书馆三楼",
+      "iscomment":"no"
+    },
+    {
+      "bookid":1,
+      "bookname":"hsailcd",
+      "bookimgurl":"sdbkflgkkknhfukdgh",
+      "author":"dsbkflbgnjigoit",
+      "endtime": "2020-10-20",
+      "library": "中区图书馆三楼",
+      "iscomment":"no"
+    },
+    {
+      "bookid":2,
+      "bookname":"hsailcd",
+      "bookimgurl":"sdbkflgkkknhfukdgh",
+      "author":"dsbkflbgnjigoit",
+      "endtime": "2020-10-20",
+      "library": "中区图书馆三楼",
+      "iscomment":"no"
+    },
+    {
+      "bookid":1,
+      "bookname":"hsailcd",
+      "bookimgurl":"sdbkflgkkknhfukdgh",
+      "author":"dsbkflbgnjigoit",
+      "endtime": "2020-10-20",
+      "library": "中区图书馆三楼",
+      "iscomment":"no"
+    },
+    {
+      "bookid":2,
+      "bookname":"hsailcd",
+      "bookimgurl":"sdbkflgkkknhfukdgh",
+      "author":"dsbkflbgnjigoit",
+      "endtime": "2020-10-20",
+      "library": "中区图书馆三楼",
+      "iscomment":"no"
+    }
+  ],
+  "historyread": [
+    {
+      "bookid":1,
+      "bookname":"hsailcd",
+      "bookimgurl":"sdbkflgkkknhfukdgh",
+      "author":"dsbkflbgnjigoit",
+      "endtime": "2020-10-20",
+      "library": "中区图书馆三楼",
+      "iscomment":"no"
+    },
+    {
+      "bookid":2,
+      "bookname":"hsailcd",
+      "bookimgurl":"sdbkflgkkknhfukdgh",
+      "author":"dsbkflbgnjigoit",
+      "endtime": "2020-12-24",
+      "library": "中区图书馆三楼",
+      "iscomment":"no"
+    }
+  ]
+}

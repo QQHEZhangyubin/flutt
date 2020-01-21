@@ -1,0 +1,61 @@
+{
+  "bookid":1,
+  "booktype": 1,
+  "bookname":"USAIFHISH",
+  "bookimgurl":"sdbkflgkkknhfukdgh",
+  "author":"dsbkflbgnjigoit",
+  "dec":"dafisfgndohwyu",
+  "favoritecount":260,
+  "press": "人民出版社",
+  "pressdate": "2016-06",
+  "chaptercount":24,
+  "guancang":[
+    {
+      "suozaiguan": "齐大",
+      "state":"no",
+      "guancangdian":"中区图书馆三楼",
+      "suoshuhao": "TP48/445"
+    },
+    {
+      "suozaiguan": "齐大",
+      "state":"no",
+      "guancangdian":"中区图书馆三楼",
+      "suoshuhao": "TP48/445"
+    },
+    {
+      "suozaiguan": "齐大",
+      "state":"no",
+      "guancangdian":"中区图书馆三楼",
+      "suoshuhao": "TP48/445"
+    }
+  ],
+  "boocomment":[
+    {
+      "commentid":29,
+      "commentuser":"ADKSSDV",
+      "commentuserimg":"http://www.avitar.img",
+      "commentcontent":"wonderful comment !",
+      "commentdate":"2016-02-10",
+      "favocomment":367,
+      "givestar":3
+    },
+    {
+      "commentid":29,
+      "commentuser":"ADKSSDV",
+      "commentuserimg":"http://www.avitar.img",
+      "commentcontent":"wonderful comment !",
+      "commentdate":"2016-02-10",
+      "favocomment":367,
+      "givestar":3
+    },
+    {
+      "commentid":29,
+      "commentuser":"ADKSSDV",
+      "commentuserimg":"http://www.avitar.img",
+      "commentcontent":"wonderful comment !",
+      "commentdate":"2016-02-10",
+      "favocomment":367,
+      "givestar":3
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "banners": [
+    {
+      "imgurl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1579327324199&di=c7425062d8cb16e37b672a15af8b5a4a&imgtype=0&src=http%3A%2F%2F00.imgmini.eastday.com%2Fmobile%2F20180614%2F20180614081508_a2bdd51f69827d1c852675bf6687917d_5.jpeg",
+      "clickurl":"https://www.jianshu.com/p/7187203e5e88"
+    },
+    {
+      "imgurl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1579327324198&di=05a09cbfb18148ef2e509c8e83ca4c7b&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201810%2F27%2F20181027070330_gjwfl.jpeg",
+      "clickurl": "https://blog.csdn.net/l707941510/article/details/97958656"
+    },
+    {
+      "imgurl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1579327324198&di=cf78df14e12493dd9b55c2429ed21ecd&imgtype=0&src=http%3A%2F%2Fimage2.sina.com.cn%2Fdongman%2Fm%2F2005-11-10%2FU637P55T4D75057F50DT20051110115501.jpg",
+      "clickurl": "https://www.jianshu.com/p/508775f08c95"
+    },
+    {
+      "imgurl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1579327324198&di=6f9a19dc01abec13e8c23b26d649da7b&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20171104%2Fadd2486c49004c26bc3f7e7ea66c4f85.jpeg",
+      "clickurl": "https://www.jianshu.com/p/61c02172801e"
+    },
+    {
+      "imgurl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1579327324196&di=69cb06f029352ada40153a7a357f1717&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fforum%2Fw%3D580%2Fsign%3D81da58c8e3f81a4c2632ecc1e72b6029%2Fd945f21fbe096b637bcdb4ec04338744eaf8acbe.jpg",
+      "clickurl": "https://github.com/yechaoa/wanandroid_flutter"
+    }
+
+  ]
+}
