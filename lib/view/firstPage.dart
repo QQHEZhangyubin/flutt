@@ -97,20 +97,61 @@ class _FirstPageState extends State<FirstPage>{
          ),
        ],
      );
+     var suibiankankan = Container(
+       width: MediaQuery.of(context).size.width,
+       child: Column(
+         children: <Widget>[
+           ListTile(
+             title: Text('随便看看'),
+             leading: Icon(Icons.rotate_left,color: Colors.blue,),
+             trailing: IconButton(
+                 icon: Icon(
+                   Icons.arrow_forward_ios,
+                   color: Colors.blue,
+                 ),
+                 onPressed: (){
+
+                 },
+             ),
+           ),
+           Expanded(
+               child: GridView.builder(
+                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                     crossAxisCount: 3,
+                     childAspectRatio: 1.0,
+                   ),
+                   itemBuilder: (context,index){
+                     return GestureDetector(
+                       onTap: (){
+
+                       },
+                       child: Column(
+                         children: <Widget>[
+                           Image.network("https://img12.360buyimg.com/n7/jfs/t29086/155/678303512/196690/31039bd0/5bfb571bN407bfa35.jpg"),
+                           Text("浮生六记"),
+                         ],
+                       ),
+                     );
+                   },
+                   itemCount: 6,
+               ),
+           ),
+         ],
+       ),
+     );
 
     return Scaffold(
       appBar: AppBar(
         title: TextFiledWidget(),
         backgroundColor: Colors.transparent,
       ),
-      body: Column(
-        children: <Widget>[
-          Expanded(
-            flex: 2,
-              child: Container(
-                width: MediaQuery.of(context).size.width,
-                height: 50,
-                child: Swiper(
+      body:CustomScrollView(
+        slivers: <Widget>[
+          SliverToBoxAdapter(
+            child: SizedBox(
+                  width: MediaQuery.of(context).size.width,
+                  height: 200,
+                  child: Swiper(
                     itemCount: bannerDatas.length,
                     itemBuilder: (BuildContext context,int index){
                       return Image.network(
@@ -126,79 +167,100 @@ class _FirstPageState extends State<FirstPage>{
                         activeSize: 8.0,
                       ),
                     ),
-                  scrollDirection: Axis.horizontal,
-                  autoplay: true,
-                  onTap: (index) => print('点击了第$index个'),
+                    scrollDirection: Axis.horizontal,
+                    autoplay: true,
+                    onTap: (index) => print('点击了第$index个'),
+                  ),
                 ),
-              ),
           ),
-          Expanded(
-            flex: 1,
-            child: Padding(
-                padding: const EdgeInsets.only(top: 0.5),
-                child: Row(
-                  children: <Widget>[
-                    Expanded(
+          SliverToBoxAdapter(
+                 child:  Padding(
+                  padding: const EdgeInsets.only(top: 0.5),
+                  child: Row(
+                    children: <Widget>[
+                      Expanded(
                         flex: 1,
                         child: RaisedButton(
-                            child: Text("分类榜"),
+                          child: Text("分类榜"),
+                          textColor: Colors.white,
+                          color: Colors.blue,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(25)
+                          ),
+                          onPressed: (){
+                            Navigator.pushNamed(
+                                context,
+                                "sortbang",
+                                arguments: ScreenArguments("分类榜", "x2")
+                            );
+                          },
+                        ),
+                      ),
+                      Expanded(
+                        // flex: 1,
+                        child: RaisedButton(
+                            child: Text("借阅榜"),
                             textColor: Colors.white,
                             color: Colors.blue,
                             shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(25)
+                                borderRadius: BorderRadius.circular(25)
                             ),
                             onPressed: (){
-                              print('sf');
-                            },
+                              Navigator.pushNamed(
+                                  context,
+                                  "newbook",
+                                  arguments: ScreenArguments("借阅榜", "x1")
+                              );
+                            }
                         ),
-                    ),
-                    Expanded(
-                     // flex: 1,
-                      child: RaisedButton(
-                          child: Text("借阅榜"),
-                          textColor: Colors.white,
-                          color: Colors.blue,
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(25)
-                          ),
-                          onPressed: (){
-                            Navigator.pushNamed(
-                                context,
-                                "newbook",
-                                arguments: ScreenArguments("借阅榜", "x1")
-                            );
-                          }
                       ),
-                    ),
-                    Expanded(
-                      flex: 1,
-                      child: RaisedButton(
-                          child: Text("新书榜"),
-                          textColor: Colors.white,
-                          color: Colors.blue,
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(25)
-                          ),
-                          onPressed: (){
-                            Navigator.pushNamed(
-                                context,
-                                "newbook",
-                                arguments: ScreenArguments("新书榜", "x0")
-                            );
-                          }
+                      Expanded(
+                        flex: 1,
+                        child: RaisedButton(
+                            child: Text("新书榜"),
+                            textColor: Colors.white,
+                            color: Colors.blue,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(25)
+                            ),
+                            onPressed: (){
+                              Navigator.pushNamed(
+                                  context,
+                                  "newbook",
+                                  arguments: ScreenArguments("新书榜", "x0")
+                              );
+                            }
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
+          ),
+          SliverToBoxAdapter(
+            child: SizedBox(
+              width: MediaQuery.of(context).size.width,
+              height: 400,
+              child: daxuebidu,
             ),
           ),
-          Expanded(
-              flex: 4,
-              child:
-              daxuebidu),
-
+          SliverToBoxAdapter(
+            child: SizedBox(
+              width: MediaQuery.of(context).size.width,
+              height: 500,
+              child: suibiankankan,
+            ),
+          ),
+          SliverToBoxAdapter(
+            child: SizedBox(
+              width: MediaQuery.of(context).size.width,
+              height: 400,
+              child: daxuebidu,
+            ),
+          ),
+        // daxuebidu,
         ],
-      ),
+      )
+
     );
   }
 }
@@ -217,6 +279,7 @@ class TextFiledWidget extends StatelessWidget {
     return Theme(
         data: ThemeData(primaryColor: Colors.grey),
         child: TextField(
+          autofocus: false,
           cursorColor: Colors.grey,
           decoration: InputDecoration(
             contentPadding: const EdgeInsets.symmetric(vertical: 10.0),

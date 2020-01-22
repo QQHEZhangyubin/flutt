@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       routes: <String,WidgetBuilder>{
         "sortbang":(context) => SortRoute() ,
         "hotbang":(context) => HotRoute(),
-        "newbook":(context)  => NewbookRoute(),
+        "newbook":(context)  => NewBook(),
 //        "search":(context)  =>SearchRoute(),
         "scanner":(context)  =>ScannerRoute(),
         "detail":(context) =>DetailRoute(),

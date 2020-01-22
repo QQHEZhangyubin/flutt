@@ -6,12 +6,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class NewbookRoute extends StatefulWidget{
+class NewBook extends StatefulWidget{
   @override
   _NewBookRouteState createState() => _NewBookRouteState();
 }
 
-class _NewBookRouteState extends State<NewbookRoute> {
+class _NewBookRouteState extends State<NewBook> {
   BookdataList bookdataLi;
 
 
