@@ -52,7 +52,10 @@ class _FourPageState extends State<FourPage>{
                        child: IconButton(
                            icon: Icon(Icons.settings),
                            onPressed: (){
-
+                             Navigator.pushNamed(
+                                 context,
+                                 "setting",
+                             );
                            },
                        ),
                    ),

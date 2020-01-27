@@ -24,6 +24,8 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
   flutter_swiper : ^1.1.6
+  flutter_screenutil: ^1.0.2
+#  webview_flutter: ^0.3.19+5
 
 
 dev_dependencies:
@@ -50,6 +52,8 @@ flutter:
     - jsons/record.json
     - jsons/bookdatas.json
     - jsons/bookdetail.json
+    - imgs/ic_launcher.png
+    - imgs/splashimg.jpg
 
   # To add assets to your application, add an assets section, like this:
   # assets:

@@ -1,3 +1,5 @@
+
+import 'package:flutt/states/shudanitem.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:flutt/models/bannerdata.dart';
@@ -118,7 +120,7 @@ class _FirstPageState extends State<FirstPage>{
                child: GridView.builder(
                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                      crossAxisCount: 3,
-                     childAspectRatio: 1.0,
+                     childAspectRatio: 0.7,
                    ),
                    itemBuilder: (context,index){
                      return GestureDetector(
@@ -146,6 +148,7 @@ class _FirstPageState extends State<FirstPage>{
         backgroundColor: Colors.transparent,
       ),
       body:CustomScrollView(
+        shrinkWrap: true,
         slivers: <Widget>[
           SliverToBoxAdapter(
             child: SizedBox(
@@ -169,7 +172,12 @@ class _FirstPageState extends State<FirstPage>{
                     ),
                     scrollDirection: Axis.horizontal,
                     autoplay: true,
-                    onTap: (index) => print('点击了第$index个'),
+                    onTap: (index){
+                      Navigator.pushNamed(
+                          context,
+                          "web",
+                      );
+                    },
                   ),
                 ),
           ),
@@ -244,19 +252,75 @@ class _FirstPageState extends State<FirstPage>{
             ),
           ),
           SliverToBoxAdapter(
-            child: SizedBox(
-              width: MediaQuery.of(context).size.width,
-              height: 500,
-              child: suibiankankan,
+            child:  ListTile(
+              title: Text('随便看看'),
+              leading: Icon(Icons.rotate_left,color: Colors.blue,),
+              trailing: IconButton(
+                icon: Icon(
+                  Icons.arrow_forward_ios,
+                  color: Colors.blue,
+                ),
+                onPressed: (){
+
+                },
+              ),
             ),
           ),
+          SliverPadding(
+              padding: const EdgeInsets.all(8.0),
+              sliver: SliverGrid(
+                  delegate: SliverChildBuilderDelegate(
+                          (BuildContext context,int index){
+                          return Container(
+                            alignment: Alignment.center,
+                            child: GestureDetector(
+                              onTap: (){
+
+                              },
+                              child: Column(
+                                children: <Widget>[
+                                  Image.network("https://img12.360buyimg.com/n7/jfs/t29086/155/678303512/196690/31039bd0/5bfb571bN407bfa35.jpg"),
+                                  Text("浮生六记"),
+                                ],
+                              ),
+                            ),
+                          );
+                  },
+                      childCount: 6),
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 3,
+                    mainAxisSpacing: 10.0,
+                    crossAxisSpacing: 10.0,
+                    childAspectRatio: 0.7,
+                  ),
+              ),
+
+          ),
+//          SliverToBoxAdapter(
+//            child: SizedBox(
+//              width: MediaQuery.of(context).size.width,
+//              height: 400,
+//              child: suibiankankan,
+//            ),
+//          ),
           SliverToBoxAdapter(
-            child: SizedBox(
-              width: MediaQuery.of(context).size.width,
-              height: 400,
-              child: daxuebidu,
-            ),
+            child: Text('书单'),
           ),
+          SliverFixedExtentList(
+                              delegate:new SliverChildBuilderDelegate(
+                                      (BuildContext context, int index) {
+                                    //创建列表项
+                                    return new Container(
+                                      alignment: Alignment.center,
+                                      color: Colors.lightBlue[100 * (index % 9)],
+                                      child: ShuDanItem(),
+                                    );
+                                  },
+                                  childCount: 10 //10个列表项
+                              ),
+              itemExtent: 190,
+          ),
+
         // daxuebidu,
         ],
       )
